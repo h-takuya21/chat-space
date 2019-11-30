@@ -1,0 +1,156 @@
+$whitecolor: #FFFFFF;
+$graycolor: #434A54;
+
+.side-bar {
+  background-color: #2f3e51;
+  width: 300px;
+  height: 100vh;
+  color: $whitecolor;
+  float: left;
+
+  
+  &__header {
+    height: 100px;
+    padding: 0 20px;
+    background-color: #253141;
+    font-size: 16px;
+    align-items: center;
+    font-weight: bold;
+    display: flex
+  }
+
+    &__icon1 {
+      margin-right:  auto;
+    }
+
+    &__icon2 {
+      margin-right: 0px auto;
+    }
+
+    &__groupe {
+      padding-top: 20px;
+      font-size: 15px;
+      padding: 20px 20px 0px 20px;
+    
+    }
+    &__meesage{
+      font-size: 11px;
+      padding: 0px 20px 40px 20px;
+    }
+
+}
+
+.main-chat{
+  width: calc(100vw - 300px);
+  margin-left: 300px;
+
+  &__groupe {
+      font-size: 20px;
+      color: #333333;
+      padding: 35px 0px 15px 40px;
+      height: 50px;
+    }
+
+    &__menber {
+      font-size: 12px;
+      color: #999999;
+      
+    }
+
+    &__edit {
+    color: #38AEF0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    border: solid 1px #38AEF0;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    }
+
+    &__boder {
+    border: solid #333333;
+    }
+}
+
+.chat-view {
+    background-color: #fafafa;
+    margin-left: 300px;
+    width: calc(100vw - 300px);
+    height: calc(100vh - 190px);
+   
+    &__name {
+      font-size: 16px;
+      color: $graycolor;
+      font-weight: bold;
+      display: flex;
+      padding-top: 46px;
+      padding-left: 40px;
+
+    }
+
+    &__timestampe {
+      font-size: 12px;
+      color: #999999;
+      padding-left: 10px;
+    }
+      
+    &__message {
+      font-size: 14px;
+      color: $graycolor;
+      padding-top: 10px;
+      margin-left: 40px;
+
+    }
+}
+
+.form {
+  display: flex;  
+  margin-left: 300px;
+  padding-left: 40px;
+  margin-bottom: 0 auto;
+  align-items: center;
+  background-color: #ddd;
+  width: calc(100vw - 336px);
+  height: 90px;
+  text-align: center;
+
+  .form-message {
+    input[type="textarea"] {
+      width: calc(100vw - 495px);
+      height: 50px;
+      border: none;
+      
+  }
+
+    ::placeholder {
+      padding: 10px;
+      font-size: 16px;
+      color: #434A54;
+      outline: none;
+   }
+  }
+
+  .form-file {
+    input{display: none;
+    }
+    position: absolute ;
+    right: 165px;
+    font-size: 23px;
+    
+
+  }
+
+  .form-btn {
+    input{
+      width: 100px;
+      height: 50px;
+      color: $whitecolor;
+      margin: 0px 40px 0px 15px;
+      
+      
+    }
+  }
+
+}

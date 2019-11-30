@@ -1,0 +1,33 @@
+.main-chat
+  
+  .main-chat__groupe
+    group name
+
+    
+
+    .main-chat__menber
+      Menber:
+
+  .main-chat__edit
+    Edit
+
+.chat-view
+  .chat-view__name
+    syouya
+    .chat-view__timestampe
+      2019/10/08/19:14:39
+  .chat-view__message
+    this is first message
+
+.form
+
+  .form-message
+    %input(type="textarea"  placeholder="type a message" )/
+    
+  .form-file
+    %label{class: "input-box__image"}
+      = icon('fas', 'image')
+      %input{type: "file" }
+  
+  .form-btn
+    %input(type="submit" value="Send" style="background-color: #38AEF0;"  )
