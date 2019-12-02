@@ -1,6 +1,16 @@
 $whitecolor: #FFFFFF;
 $graycolor: #434A54;
 
+a:visited {
+  color: $whitecolor;
+  text-decoration: none;
+}
+a:link {
+  color: $whitecolor;
+  text-decoration: none;
+}  
+
+
 .side-bar {
   background-color: #2f3e51;
   width: 300px;
@@ -20,22 +30,27 @@ $graycolor: #434A54;
   }
 
     &__icon1 {
-      margin-right:  auto;
+      position: absolute;
+      margin-left: 230px;
+      color:$whitecolor;
     }
 
     &__icon2 {
-      margin-right: 0px auto;
+      position: absolute;
+      margin-left: 250px;
     }
 
     &__groupe {
       padding-top: 20px;
       font-size: 15px;
       padding: 20px 20px 0px 20px;
-    
+      color:$whitecolor;
     }
+
     &__meesage{
       font-size: 11px;
       padding: 0px 20px 40px 20px;
+      color:$whitecolor;
     }
 
 }
