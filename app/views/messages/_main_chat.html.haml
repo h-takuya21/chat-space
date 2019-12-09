@@ -1,33 +1,30 @@
 .main-chat
   
   .main-chat__groupe
-    group name
+    = @group.name
 
     
 
     .main-chat__menber
-      Menber:
+      - @group.users.each do |user|
+        = user.name
 
   .main-chat__edit
-    Edit
+    = link_to "Edit", edit_group_path(@group), class: 'edit'
 
 .chat-view
   .chat-view__name
     syouya
     .chat-view__timestampe
       2019/10/08/19:14:39
-  .chat-view__message
-    this is first message
+  .messages
+  = render @messages
 
 .form
-
-  .form-message
-    %input(type="textarea"  placeholder="type a message" )/
-    
-  .form-file
-    %label{class: "input-box__image"}
-      = icon('fas', 'image')
-      %input{type: "file" }
-  
-  .form-btn
-    %input(type="submit" value="Send" style="background-color: #38AEF0;"  )
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+    .form__file
+      = f.label :image, class: 'form__mask__image' do
+        = icon('fas', 'image', class: 'icon')
+        = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'submit'

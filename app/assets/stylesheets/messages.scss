@@ -72,7 +72,7 @@ a:link {
       
     }
 
-    &__edit {
+    .edit {
     color: #38AEF0;
     height: 40px;
     line-height: 40px;
@@ -116,56 +116,50 @@ a:link {
       color: $graycolor;
       padding-top: 10px;
       margin-left: 40px;
-
     }
 }
 
 .form {
-  display: flex;  
+  align-items: center;
+  display: flex;
   margin-left: 300px;
   padding-left: 40px;
   margin-bottom: 0 auto;
-  align-items: center;
   background-color: #ddd;
-  width: calc(100vw - 336px);
+  width: calc(100vw - 340px);
   height: 90px;
-  text-align: center;
-
-  .form-message {
-    input[type="textarea"] {
-      width: calc(100vw - 495px);
-      height: 50px;
+  
+  &__message {
+      position: relative;
+      width: calc(100vw - 515px);
+      height: 30px;
       border: none;
-      
-  }
-
-    ::placeholder {
       padding: 10px;
       font-size: 16px;
       color: #434A54;
-      outline: none;
-   }
   }
 
-  .form-file {
-    input{display: none;
-    }
-    position: absolute ;
-    right: 165px;
-    font-size: 23px;
-    
-
-  }
-
-  .form-btn {
-    input{
+  .submit {
       width: 100px;
       height: 50px;
       color: $whitecolor;
-      margin: 0px 40px 0px 15px;
-      
-      
+      background-color: #38AEF0;
+      margin: 0px 40px 0px 15px; 
+  }
+  
+  .form__mask__image {
+    input{display: none;
+    }
+    .icon {
+    position: absolute;
+    right: 165px;
+    bottom: 30px;
+    align-items: center;
+    font-size: 23px;
     }
   }
-
+  .new_message {
+    display: flex;
+    align-items: center;
+  }
 }
