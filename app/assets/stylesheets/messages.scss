@@ -17,6 +17,7 @@ a:link {
   height: 100vh;
   color: $whitecolor;
   float: left;
+  overflow: scroll;
 
   
   &__header {
@@ -94,6 +95,7 @@ a:link {
     margin-left: 300px;
     width: calc(100vw - 300px);
     height: calc(100vh - 190px);
+    overflow: scroll;
    
     &__name {
       font-size: 16px;
