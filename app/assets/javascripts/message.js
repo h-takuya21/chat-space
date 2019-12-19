@@ -37,7 +37,6 @@ $(function(){
     e.preventDefault()
     var formData = new FormData(this);
     var url = $(this).attr('create')
-   
     
     $.ajax({
       url: url,
