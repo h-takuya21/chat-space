@@ -3,8 +3,6 @@
   .main-chat__groupe
     = @group.name
 
-    
-
     .main-chat__menber
       - @group.users.each do |user|
         = user.name
@@ -13,10 +11,7 @@
     = link_to "Edit", edit_group_path(@group), class: 'edit'
 
 .chat-view
-  .chat-view__name
-    syouya
-    .chat-view__timestampe
-      2019/10/08/19:14:39
+  
   .messages
   = render @messages
 
