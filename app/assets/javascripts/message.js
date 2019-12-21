@@ -15,7 +15,7 @@ $(function(){
                     <p class="image_on_lower-message__content_directly">
                       ${ message.content }
                     </p>
-                    <img src="${message.image }">
+                    <img src="${message.image }" alt="lower-message__image">
                   </div>`
         
     } else {
@@ -35,7 +35,6 @@ $(function(){
   }
   $('#new_message').on('submit', function(e){
     e.preventDefault()
-    console.log(this)
     var formData = new FormData(this);
     var url = $(this).attr('create')
     
