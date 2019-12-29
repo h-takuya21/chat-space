@@ -81,7 +81,7 @@ $(function(){
       if (messages.length !== 0) {
       var insertHTML = '';
       $.each(messages, function(i, message) {
-        insertHTML += buildHTML(message)
+      insertHTML += buildHTML(message)
       });
       $('.chat-view').append(insertHTML);
       $('.chat-view').animate({ scrollTop: $('.chat-view')[0].scrollHeight});
